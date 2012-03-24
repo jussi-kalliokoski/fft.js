@@ -96,11 +96,11 @@ FFT.prototype = {
 	},
 
 	forward: function (input) {
-		FFT.fft(input, this.scratch, this.factors, true);
+		FFT.process(input, this.scratch, this.factors, true);
 	},
 
 	backward: function (input) {
-		FFT.fft(input, this.scratch, this.factors, false);
+		FFT.process(input, this.scratch, this.factors, false);
 	}
 };
 
