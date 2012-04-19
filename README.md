@@ -1,29 +1,11 @@
 # fft.js
 
-FFT in JavaScript, fastest out there.
+FFT in JavaScript, ~~fastest out there~~ no longer true :(
 
-## Usage
+## WARNING
 
-```javascript
+This branch has been deprecated in favor of [a new, faster and more flexible version](https://github.com/JensNockert/fft.js). Please avoid using this branch any longer, it is preserved only for legacy purposes.
 
-/* As a class, with automatic buffer reuse */
-
-var fft = new FFT([bufferSize=2048]);
-
-fft.forward(inputBuffer);
-fft.backward(inputBuffer);
-
-/* Static functionality */
-
-FFT.fft(input, scratchBuffer, factors, inverse);
-
-/* Kernel support */
-
-if (!FFT.pass[3]) {
-	console.error('Sorry, kernel of three is not supported yet :(');
-}
-
-```
 
 ## License
 
